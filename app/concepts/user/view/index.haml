@@ -1,0 +1,11 @@
+= link_to 'New', new_user_path
+%br
+%br
+- @model.each do |user|
+  = "#{user.name} #{user.email}"
+  = link_to 'Edit', edit_user_path(user)
+  = link_to 'Destroy', user_path(user),
+              method: :delete,
+              data: { confirm: 'Are you sure?' }
+  = link_to 'Show', user_path(user)
+  %br

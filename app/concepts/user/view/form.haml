@@ -1,0 +1,12 @@
+= simple_form_for(model, html: {novalidate: true}) do |f|
+  .row
+    .col-sm-12
+      = f.input :name, placeholder: "Name"
+  %br
+  .row
+    .col-sm-12
+      = f.input :email, placeholder: "abc@gmail.com"
+  %br
+  .row
+    .col-sm-12
+      = f.submit 'Submit'

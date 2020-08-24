@@ -33,6 +33,16 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'trailblazer-rails'
+
+gem "trailblazer-cells"
+gem 'trailblazer-endpoint', github: 'trailblazer/trailblazer-endpoint'
+gem "cells-rails"
+gem "cells-haml"
+gem 'simple_form', '4.0.0'
+gem 'reform'
+gem 'reform-rails'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
